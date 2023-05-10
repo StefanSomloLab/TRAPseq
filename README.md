@@ -2,7 +2,7 @@
 Targeted purification of polysomal mRNA (TRAP-Seq) is a recently developed transcriptome profiling technique that maps translating mRNAs under specific tagged-cells. Herein, we describe our TRAPseq protocol for transcriptome profiling. Our protocol outlines all necessary steps for transcriptome profiling including the bioinformatic pipeline steps required to process, analyze, and identify differentially expressed genes (DEGs). <BR>
 see, https://www.google.com/ for more TRAPseq experiment details.
 
-<img src="https://github.com/macroant/TRAPseq/blob/main/doc/overview.png" height="400" width="700">
+<img src="https://github.com/StefanSomloLab/TRAPseq/blob/main/doc/overview.png" height="400" width="700">
 ## 
 
 To replicate results presented in the manuscript above, please run the script after installation of all required libraries.
@@ -94,17 +94,17 @@ Evaluate and remove outlier samples can significantly improve the reliability of
 > abline(v=3, lty = 2, col = "red")
 > text(x=5, y=20, paste("top3 = ", round(sum(pcaVar[1:3]),1), "%", sep=""), col = "red")
 ```
-<img src="https://github.com/macroant/TRAPseq/blob/main/doc/scree_plot.png" height="400" width="500">
+<img src="https://github.com/StefanSomloLab/TRAPseq/blob/main/doc/scree_plot.png" height="400" width="500">
 	
 ```r
 # Robust PCA, k=3
 > pc <- PcaGrid(t(data_matrix_log), k = 3, method = "qn")
 > plot(pc, main = "Robust PCA, k=3", xlim = c(0, 3.5))
 ```
-<img src="https://github.com/macroant/TRAPseq/blob/main/doc/robustPCA.png" height="400" width="500">
+<img src="https://github.com/StefanSomloLab/TRAPseq/blob/main/doc/robustPCA.png" height="400" width="500">
 <BR>
 #Visualization TRAPseq Samples with classic PCA
-<img src="https://github.com/macroant/TRAPseq/blob/main/doc/PCA.png" height="400" width="500">
+<img src="https://github.com/StefanSomloLab/TRAPseq/blob/main/doc/PCA.png" height="400" width="500">
 <BR>
 
 ## <a name="workflow"></a> Step 4 Cell Type Deconvolution
@@ -216,7 +216,7 @@ combined_plot <- SKO_WT_plot + SKO_DKO_plot + DKO_WT_plot
 
 combined_plot
 ```
-<img src="https://github.com/macroant/TRAPseq/blob/main/doc/volcano.png" height="400" width="700">
+<img src="https://github.com/StefanSomloLab/TRAPseq/blob/main/doc/volcano.png" height="400" width="700">
 
 ## <a name="workflow"></a> Step 6 Enrichment Analysis (optional analysis step)
 Biological interpretations of selected DEGs are performed using various bioinformatics tools, including [DAVID](https://david.ncifcrf.gov), [Metascape](https://metascape.org/gp/index.html#/main/step1), and commercal tool [IPA](https://digitalinsights.qiagen.com/products-overview/discovery-insights-portfolio/analysis-and-visualization/qiagen-ipa/) or [MetaCore](https://clarivate.com/products/biopharma/discovery-clinical-regulatory/early-research-intelligence-solutions/).
