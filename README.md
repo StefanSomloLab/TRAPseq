@@ -1,4 +1,4 @@
-# A TRAPseq protocol and analysis pipeline to identify mutant-cell specific transcriptome
+# A TRAPseq protocol and analysis pipeline to identify mutant-cell specific transcriptome (under reviewing)
 Targeted purification of polysomal mRNA (TRAP-Seq) is a recently developed transcriptome profiling technique that maps translating mRNAs under specific tagged-cells. Herein, we describe our TRAPseq protocol for transcriptome profiling. Our protocol outlines all necessary steps for transcriptome profiling including the bioinformatic pipeline steps required to process, analyze, and identify differentially expressed genes (DEGs). <BR>
 see, https://www.google.com/ for more TRAPseq experiment details.
 
