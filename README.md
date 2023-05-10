@@ -68,7 +68,7 @@ filter_function <- function (x) {
   }
 }
 ```
-The relative abundance of a transcript is calculated by Fragments per Kilobase per Million Mapped Fragments (FPKM) and Transcripts per million (TPM).<BR>
+The relative abundance of a transcript is calculated by Transcripts per million (TPM).<BR>
 ```r
 #r function for TPM normalization
 #x is the raw reads counts for genes in a sample, y is their corresponding length of genes
